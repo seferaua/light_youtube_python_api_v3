@@ -1,17 +1,17 @@
 import unittest
 
-from youtube_light.channel_info_handler import СhannelInfoHandler
-from youtube_light.playlist_handler import PlaylistHandler
-from youtube_light.playlist_handler import PlaylistItemHandler
-from youtube_light.video_handler import VideoStatisticHandler
-from youtube_light.comment_handler import CommentHandler
+from youtubelight.channel_info_handler import СhannelInfoHandler
+from youtubelight.playlist_handler import PlaylistHandler
+from youtubelight.playlist_handler import PlaylistItemHandler
+from youtubelight.video_handler import VideoStatisticHandler
+from youtubelight.comment_handler import CommentHandler
 
 
 class YoutubeHandler(unittest.TestCase):
 
     def setUp(self):
         # need set api key, before run a tests
-        self.api_key = ''
+        self.api_key = 'AIzaSyAnoPEHpSOWfXseNmb1SP8TLjes2jhD24A'
 
     def test_get_channel_info(self):
         obj = СhannelInfoHandler(self.api_key)

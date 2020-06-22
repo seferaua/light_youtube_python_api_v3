@@ -10,7 +10,7 @@ This library allow easy work with youtube api on python. allows you to use the f
 ### Get channel info by channel name
 
 ```python
-from youtube_light.channel_info_handler import СhannelInfoHandler
+from youtubelight.channel_info_handler import СhannelInfoHandler
 
 API_KEY = 'some_key'
 obj = СhannelInfoHandler(API_KEY)
@@ -20,7 +20,7 @@ obj.get_channel_info_by_name('channel_name')
 ### Get channel info by channel id
 
 ```python
-from youtube_light.channel_info_handler import СhannelInfoHandler
+from youtubelight.channel_info_handler import СhannelInfoHandler
 
 API_KEY = 'some_key'
 obj = СhannelInfoHandler(API_KEY)
@@ -30,7 +30,7 @@ obj.get_channel_info_by_id('channel_id')
 ### Get channel info by channel selections
 
 ```python
-from youtube_light.channel_info_handler import СhannelInfoHandler
+from youtubelight.channel_info_handler import СhannelInfoHandler
 
 API_KEY = 'some_key'
 obj = СhannelInfoHandler(API_KEY)
@@ -44,7 +44,7 @@ All methods above have an optional parameter: default_param='snippet,contentDeta
 ### Get playlist by channel id
 
 ```python
-from youtube_light.playlist_handler import PlaylistHandler
+from youtubelight.playlist_handler import PlaylistHandler
 
 API_KEY = 'some_key'
 obj = PlaylistHandler(API_KEY)
@@ -53,7 +53,7 @@ obj.get_play_list(channel_id, itm_result) # default itm_result=50
 
 ### Get next page playlist
 ```python
-from youtube_light.playlist_handler import PlaylistHandler
+from youtubelight.playlist_handler import PlaylistHandler
 
 API_KEY = 'some_key'
 obj = PlaylistHandler(API_KEY)
@@ -63,7 +63,7 @@ obj.playlist_next_page()
 
 ### Get all pages playlist
 ```python
-from youtube_light.playlist_handler import PlaylistHandler
+from youtubelight.playlist_handler import PlaylistHandler
 
 API_KEY = 'some_key'
 obj = PlaylistHandler(API_KEY)
@@ -72,7 +72,7 @@ obj.get_all_playlists(channel_id)
 
 ### Filter playlist by such parameters: title, description, publishedAt.
 ```python
-from youtube_light.playlist_handler import PlaylistHandler
+from youtubelight.playlist_handler import PlaylistHandler
 
 API_KEY = 'some_key'
 obj = PlaylistHandler(API_KEY)
@@ -86,7 +86,7 @@ result = obj.get_play_list(channel_id)
 ### Get PlaylistItm by Playlist id
 
 ```python
-from youtube_light.playlist_handler import PlaylistItemHandler
+from youtubelight.playlist_handler import PlaylistItemHandler
 
 API_KEY = 'some_key'    
 obj = PlaylistItemHandler(API_KEY)
@@ -95,7 +95,7 @@ obj.get_play_list_itm(channel_id, itm_result) # default itm_result=50
 
 ### Get next page PlaylistItm
 ```python
-from youtube_light.playlist_handler import PlaylistItemHandler
+from youtubelight.playlist_handler import PlaylistItemHandler
 
 API_KEY = 'some_key'
 obj = PlaylistItemHandler(API_KEY)
@@ -105,7 +105,7 @@ obj.list_itm_next_page()
 
 ### Get all pages playlist
 ```python
-from youtube_light.playlist_handler import PlaylistItemHandler
+from youtubelight.playlist_handler import PlaylistItemHandler
 
 API_KEY = 'some_key'
 obj = PlaylistItemHandler(API_KEY)
@@ -114,7 +114,7 @@ obj.get_all_playlist_itm(channel_id)
 
 ### Filter playlistitm by such parameters: title, description, publishedAt.
 ```python
-from youtube_light.playlist_handler import PlaylistItemHandler
+from youtubelight.playlist_handler import PlaylistItemHandler
 
 API_KEY = 'some_key'
 obj = PlaylistItemHandler(API_KEY)
@@ -131,7 +131,7 @@ All methods above have an optional parameter: default_param='snippet,contentDeta
 
 ### Get video info by video_id
 ```python
-from youtube_light.video_handler import VideoStatisticHandler
+from youtubelight.video_handler import VideoStatisticHandler
 
 API_KEY = 'some_key'
 obj = VideoStatisticHandler(API_KEY)
@@ -143,7 +143,7 @@ Method above have an optional parameter: default_param='snippet,contentDetails,s
 
 ### Get comment by video id
 ```python
-from youtube_light.comment_handler import CommentHandler
+from youtubelight.comment_handler import CommentHandler
 
 API_KEY = 'some_key'
 obj = CommentHandler(API_KEY)
@@ -151,7 +151,7 @@ obj.get_video_comment(video_id)
 ```
 ### Get comemnt next page
 ```python
-from youtube_light.comment_handler import CommentHandler
+from youtubelight.comment_handler import CommentHandler
 
 API_KEY = 'some_key'
 obj = CommentHandler(API_KEY)
@@ -161,7 +161,7 @@ obj.comments_next_page()
 
 ### Filter comment by textOriginal field
 ```python
-from youtube_light.comment_handler import CommentHandler
+from youtubelight.comment_handler import CommentHandler
 
 API_KEY = 'some_key'
 obj = CommentHandler(API_KEY)
