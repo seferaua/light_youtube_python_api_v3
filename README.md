@@ -6,6 +6,11 @@ This library allow easy work with youtube api on python. allows you to use the f
     - Work with playlists and and filtering them
     - Work with playlistsItems and and filtering them
     
+Install:
+```python
+pip install youtubelight
+```
+    
 # ---Channel info---
 ### Get channel info by channel name
 
