@@ -11,7 +11,7 @@ class YoutubeHandler(unittest.TestCase):
 
     def setUp(self):
         # need set api key, before run a tests
-        self.api_key = 'AIzaSyAnoPEHpSOWfXseNmb1SP8TLjes2jhD24A'
+        self.api_key = ''
 
     def test_get_channel_info(self):
         obj = СhannelInfoHandler(self.api_key)
